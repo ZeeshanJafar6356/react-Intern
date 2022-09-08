@@ -21,10 +21,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+     "start": " react-scripts start node shop.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+      
+    "dev": "concurrently \"node shop.js\" \"npm run start\""
   },
   "eslintConfig": {
     "extends": [
